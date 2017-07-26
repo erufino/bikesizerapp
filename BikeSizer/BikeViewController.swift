@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  BikeViewController.swift
 //  BikeSizer
 //
 //  Created by Ezra Rufino on 7/25/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class BikeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

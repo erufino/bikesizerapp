@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		63D5B30B1F27E2EB005E037C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D5B30A1F27E2EB005E037C /* AppDelegate.swift */; };
-		63D5B30D1F27E2EB005E037C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D5B30C1F27E2EB005E037C /* ViewController.swift */; };
+		63D5B30D1F27E2EB005E037C /* BikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D5B30C1F27E2EB005E037C /* BikeViewController.swift */; };
 		63D5B3101F27E2EB005E037C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D5B30E1F27E2EB005E037C /* Main.storyboard */; };
 		63D5B3121F27E2EB005E037C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63D5B3111F27E2EB005E037C /* Assets.xcassets */; };
 		63D5B3151F27E2EB005E037C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D5B3131F27E2EB005E037C /* LaunchScreen.storyboard */; };
+		63D5B31D1F280EBA005E037C /* HeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D5B31C1F280EBA005E037C /* HeightViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		63D5B3071F27E2EB005E037C /* BikeSizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeSizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D5B30A1F27E2EB005E037C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		63D5B30C1F27E2EB005E037C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		63D5B30C1F27E2EB005E037C /* BikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeViewController.swift; sourceTree = "<group>"; };
 		63D5B30F1F27E2EB005E037C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		63D5B3111F27E2EB005E037C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		63D5B3141F27E2EB005E037C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63D5B3161F27E2EB005E037C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63D5B31C1F280EBA005E037C /* HeightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeightViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				63D5B30A1F27E2EB005E037C /* AppDelegate.swift */,
-				63D5B30C1F27E2EB005E037C /* ViewController.swift */,
+				63D5B30C1F27E2EB005E037C /* BikeViewController.swift */,
+				63D5B31C1F280EBA005E037C /* HeightViewController.swift */,
 				63D5B30E1F27E2EB005E037C /* Main.storyboard */,
 				63D5B3111F27E2EB005E037C /* Assets.xcassets */,
 				63D5B3131F27E2EB005E037C /* LaunchScreen.storyboard */,
@@ -136,8 +139,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63D5B30D1F27E2EB005E037C /* ViewController.swift in Sources */,
+				63D5B30D1F27E2EB005E037C /* BikeViewController.swift in Sources */,
 				63D5B30B1F27E2EB005E037C /* AppDelegate.swift in Sources */,
+				63D5B31D1F280EBA005E037C /* HeightViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

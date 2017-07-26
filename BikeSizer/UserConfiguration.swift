@@ -8,19 +8,18 @@
 
 import UIKit
 
-enum BikeType {
-    case mountain
-    case road
-    case commuter
-    case kids
-    case none
+enum BikeType: String {
+    case mountain = "Mountain"
+    case road = "Road"
+    case commuter = "Commuter"
+    case kids = "Kids"
+    case none = "None"
 }
 
 class UserConfiguration: NSObject {
 
     static let sharedInstance = UserConfiguration()
     var bikeType:BikeType = .none
-    var userHeight:String = "notset"
-    var bikeTypeText:String = "none"
-    var userInseam:String = "notset"
+    var userHeight:String = "Select above."
+    var userInseam:String = "Select above."
 }

@@ -22,25 +22,25 @@ class BikeViewController: UIViewController {
     
     @IBAction func mountainBikeButton(_ sender: Any) {
         UserConfiguration.sharedInstance.bikeType = .mountain
-        UserConfiguration.sharedInstance.bikeTypeText = "mountain"
+        self.performSegue(withIdentifier: "HeightSegueIdentifier", sender: self)
     }
     
 
     @IBAction func roadBikeButton(_ sender: Any) {
         UserConfiguration.sharedInstance.bikeType = .road
-        UserConfiguration.sharedInstance.bikeTypeText = "road"
+        self.performSegue(withIdentifier: "HeightSegueIdentifier", sender: self)
     }
     
     
     @IBAction func commuterBikeButton(_ sender: Any) {
         UserConfiguration.sharedInstance.bikeType = .commuter
-        UserConfiguration.sharedInstance.bikeTypeText = "commuter"
+        self.performSegue(withIdentifier: "HeightSegueIdentifier", sender: self)
     }
 
 
     @IBAction func kidsBikeButton(_ sender: Any) {
         UserConfiguration.sharedInstance.bikeType = .kids
-        UserConfiguration.sharedInstance.bikeTypeText = "kids"
+        self.performSegue(withIdentifier: "HeightSegueIdentifier", sender: self)
     }
     
 }

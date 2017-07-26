@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,17 +19,17 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="TZX-ar-XCg">
-                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <rect key="frame" x="20" y="20" width="374" height="716"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Cfc-zF-Os1">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="129.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="143"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="what type of bike do you want to ride?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2o4-b1-auY">
-                                                <rect key="frame" x="0.0" y="0.0" width="343" height="129.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="143"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="34"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -37,33 +37,38 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gRs-oE-NwX">
-                                        <rect key="frame" x="0.0" y="129.5" width="343" height="129.5"/>
+                                        <rect key="frame" x="0.0" y="143" width="374" height="143"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qqk-w9-kCp" userLabel="Mountain Bike Button">
-                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="129.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="143"/>
                                                 <state key="normal" image="Group"/>
+                                                <connections>
+                                                    <action selector="mountainBikeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vu4-pG-w86"/>
+                                                    <segue destination="kIy-4D-MXl" kind="show" id="op5-pL-Oex"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKE-lf-xNO" userLabel="Road Bike Button">
-                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="129.5"/>
+                                                <rect key="frame" x="187" y="0.0" width="187" height="143"/>
                                                 <state key="normal" image="Group 2"/>
                                                 <connections>
+                                                    <action selector="roadBikeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MAh-bM-KPw"/>
                                                     <segue destination="kIy-4D-MXl" kind="show" id="gge-en-fAa"/>
                                                 </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="IrA-od-JrG">
-                                        <rect key="frame" x="0.0" y="259" width="343" height="129"/>
+                                        <rect key="frame" x="0.0" y="286" width="374" height="144"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0It-mB-1o5">
-                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="129"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="144"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
                                                 <state key="normal" title="Mountain">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHH-Wn-FqZ">
-                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="129"/>
+                                                <rect key="frame" x="187" y="0.0" width="187" height="144"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
                                                 <state key="normal" title="Road">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -72,30 +77,38 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Qxt-sR-5Vp">
-                                        <rect key="frame" x="0.0" y="388" width="343" height="129.5"/>
+                                        <rect key="frame" x="0.0" y="430" width="374" height="143"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSb-Cn-vSq">
-                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="129.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="143"/>
                                                 <state key="normal" image="Group 4"/>
+                                                <connections>
+                                                    <action selector="commuterBikeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O0P-s4-8rY"/>
+                                                    <segue destination="kIy-4D-MXl" kind="show" id="5Zs-CM-7Uc"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XtG-za-GxX">
-                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="129.5"/>
+                                                <rect key="frame" x="187" y="0.0" width="187" height="143"/>
                                                 <state key="normal" image="Group 3"/>
+                                                <connections>
+                                                    <action selector="kidsBikeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w1O-m1-S69"/>
+                                                    <segue destination="kIy-4D-MXl" kind="show" id="YaY-01-o7v"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="JdS-df-cPg">
-                                        <rect key="frame" x="0.0" y="517.5" width="343" height="129.5"/>
+                                        <rect key="frame" x="0.0" y="573" width="374" height="143"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfM-i6-rRH">
-                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="129.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="143"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
                                                 <state key="normal" title="Commuter">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ir3-dh-V3C">
-                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="129.5"/>
+                                                <rect key="frame" x="187" y="0.0" width="187" height="143"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
                                                 <state key="normal" title="Kids">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -122,44 +135,143 @@
         <!--Height View Controller-->
         <scene sceneID="Ysh-hJ-tHx">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ef1-gU-ffV" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="kIy-4D-MXl" customClass="HeightViewController" customModule="BikeSizer" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vkx-gz-RvT"/>
                         <viewControllerLayoutGuide type="bottom" id="b2M-JI-1kH"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="umh-1i-9tS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="enter your height" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68J-Jc-OV1">
-                                <rect key="frame" x="69" y="98" width="236" height="40.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="how tall are you?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68J-Jc-OV1">
+                                <rect key="frame" x="88" y="98" width="238" height="41"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Select your height" borderStyle="roundedRect" placeholder="Select your height" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7az-D9-xJu">
-                                <rect key="frame" x="69" y="240" width="248" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="select your height" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="7az-D9-xJu">
+                                <rect key="frame" x="60" y="240" width="294" height="45"/>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="P1l-4e-sK5"/>
+                                </constraints>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Bike Type: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wh0-9N-8b8">
+                                <rect key="frame" x="72" y="410" width="88" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="placeHolder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKt-DG-vlx">
+                                <rect key="frame" x="160" y="410" width="173" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lPm-DO-VF7">
+                                <rect key="frame" x="68" y="497" width="84" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpb-za-0RP">
+                                <rect key="frame" x="60" y="301" width="294" height="42"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="NEXT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="PYM-bv-omD" kind="show" id="jWr-Z6-6ty"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="gpb-za-0RP" firstAttribute="top" secondItem="7az-D9-xJu" secondAttribute="bottom" constant="16" id="4yU-vy-aSS"/>
                             <constraint firstItem="68J-Jc-OV1" firstAttribute="centerX" secondItem="umh-1i-9tS" secondAttribute="centerX" id="EDA-L4-bTb"/>
                             <constraint firstItem="68J-Jc-OV1" firstAttribute="top" secondItem="vkx-gz-RvT" secondAttribute="bottom" constant="78" id="F4Y-n0-UjI"/>
+                            <constraint firstItem="gpb-za-0RP" firstAttribute="leading" secondItem="umh-1i-9tS" secondAttribute="leadingMargin" constant="40" id="GYy-Ki-nLy"/>
                             <constraint firstItem="7az-D9-xJu" firstAttribute="top" secondItem="68J-Jc-OV1" secondAttribute="bottom" constant="101.5" id="Hbn-gD-Rqw"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="7az-D9-xJu" secondAttribute="trailing" constant="42.5" id="JtK-At-R4D"/>
-                            <constraint firstItem="7az-D9-xJu" firstAttribute="leading" secondItem="umh-1i-9tS" secondAttribute="leadingMargin" constant="53" id="l6h-HK-huU"/>
+                            <constraint firstItem="7az-D9-xJu" firstAttribute="leading" secondItem="umh-1i-9tS" secondAttribute="leadingMargin" constant="40" id="by0-OR-TsL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7az-D9-xJu" secondAttribute="trailing" constant="40" id="cBT-EG-t1F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gpb-za-0RP" secondAttribute="trailing" constant="40" id="lqi-O6-oes"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bikeTypeLabel" destination="hKt-DG-vlx" id="Urs-lg-EaI"/>
+                        <outlet property="heightNextButton" destination="gpb-za-0RP" id="JBI-5d-o11"/>
                         <outlet property="heightPickerTextField" destination="7az-D9-xJu" id="AlD-CW-Sxt"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ef1-gU-ffV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="845.60000000000002" y="36.431784107946029"/>
+            <point key="canvasLocation" x="844.92753623188412" y="35.869565217391305"/>
+        </scene>
+        <!--Inseam View Controller-->
+        <scene sceneID="DnO-5d-bmr">
+            <objects>
+                <viewController id="PYM-bv-omD" customClass="InseamViewController" customModule="BikeSizer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AeN-Kj-8Bb"/>
+                        <viewControllerLayoutGuide type="bottom" id="jmu-sb-cAb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZQp-BN-wSA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="what's your inseam?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCW-oF-8vV">
+                                <rect key="frame" x="20" y="98" width="374" height="41"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="select your inseam" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Z1J-K0-LZ9">
+                                <rect key="frame" x="60" y="241" width="294" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="gEm-bg-oNK"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dqy-VO-Dfv">
+                                <rect key="frame" x="60" y="307" width="294" height="49"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="FINISH!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Z1J-K0-LZ9" secondAttribute="trailing" constant="40" id="07g-VB-vap"/>
+                            <constraint firstItem="fCW-oF-8vV" firstAttribute="trailing" secondItem="ZQp-BN-wSA" secondAttribute="trailingMargin" id="1tj-5g-Deg"/>
+                            <constraint firstItem="dqy-VO-Dfv" firstAttribute="top" secondItem="Z1J-K0-LZ9" secondAttribute="bottom" constant="21" id="KB1-NJ-6Jg"/>
+                            <constraint firstItem="dqy-VO-Dfv" firstAttribute="leading" secondItem="ZQp-BN-wSA" secondAttribute="leadingMargin" constant="40" id="UuR-U2-ldq"/>
+                            <constraint firstItem="fCW-oF-8vV" firstAttribute="leading" secondItem="ZQp-BN-wSA" secondAttribute="leadingMargin" id="egk-oK-3rG"/>
+                            <constraint firstItem="Z1J-K0-LZ9" firstAttribute="top" secondItem="fCW-oF-8vV" secondAttribute="bottom" constant="101.5" id="j2p-2f-0Vj"/>
+                            <constraint firstItem="Z1J-K0-LZ9" firstAttribute="leading" secondItem="ZQp-BN-wSA" secondAttribute="leadingMargin" constant="40" id="j6g-25-NJd"/>
+                            <constraint firstItem="fCW-oF-8vV" firstAttribute="top" secondItem="AeN-Kj-8Bb" secondAttribute="bottom" constant="78" id="mAW-pZ-c9j"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="dqy-VO-Dfv" secondAttribute="trailing" constant="40" id="z0S-HA-9sI"/>
+                            <constraint firstItem="jmu-sb-cAb" firstAttribute="top" secondItem="dqy-VO-Dfv" secondAttribute="bottom" constant="380" id="zIf-HK-JLs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="inseamTextField" destination="Z1J-K0-LZ9" id="hJt-ue-INm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EUp-qN-S7H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1653.6231884057972" y="35.869565217391305"/>
         </scene>
     </scenes>
     <resources>
@@ -168,4 +280,7 @@
         <image name="Group 3" width="97" height="97"/>
         <image name="Group 4" width="97" height="97"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="op5-pL-Oex"/>
+    </inferredMetricsTieBreakers>
 </document>

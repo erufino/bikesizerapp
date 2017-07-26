@@ -19,7 +19,29 @@ class BikeViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func mountainBikeButton(_ sender: Any) {
+        UserConfiguration.sharedInstance.bikeType = .mountain
+        UserConfiguration.sharedInstance.bikeTypeText = "mountain"
+    }
+    
+
+    @IBAction func roadBikeButton(_ sender: Any) {
+        UserConfiguration.sharedInstance.bikeType = .road
+        UserConfiguration.sharedInstance.bikeTypeText = "road"
+    }
+    
+    
+    @IBAction func commuterBikeButton(_ sender: Any) {
+        UserConfiguration.sharedInstance.bikeType = .commuter
+        UserConfiguration.sharedInstance.bikeTypeText = "commuter"
+    }
 
 
+    @IBAction func kidsBikeButton(_ sender: Any) {
+        UserConfiguration.sharedInstance.bikeType = .kids
+        UserConfiguration.sharedInstance.bikeTypeText = "kids"
+    }
+    
 }
 

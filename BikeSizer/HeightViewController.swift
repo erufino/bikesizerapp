@@ -10,13 +10,17 @@ import UIKit
 
 class HeightViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
     @IBOutlet weak var heightPickerTextField: UITextField!
+    @IBOutlet weak var heightNextButton: UIButton!
+    @IBOutlet weak var bikeTypeLabel: UILabel!
     
-     var pickerView = UIPickerView()
+    var pickerView = UIPickerView()
     
     let height = ["4'1''","4'2''","4'3''","4'4''","4'5''","4'6''","4'7''","4'8''","4'9''","4'10''","4'11''","5'1''","5'2''","5'3''","5'4''","5'5''","5'6''","5'7''","5'8''","5'9''","5'10''","5'11''","6'1''","6'2''","6'3''","6'4''","6'5''","6'6''","6'7''","6'8''","6'9''","6'10''","6'11''"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bikeTypeLabel.text = UserConfiguration.sharedInstance.bikeTypeText
+        heightNextButton.isEnabled = false
         pickerView.delegate = self
         pickerView.dataSource = self
         heightPickerTextField.inputView = pickerView
@@ -99,6 +103,9 @@ class HeightViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         heightPickerTextField.text = height[row]
+        var userHeight = height[row]
+        print(userHeight)
+        heightNextButton.isEnabled = true
     }
     
 }

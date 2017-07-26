@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63BE67ED1F2860ED0008A8E9 /* UserConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BE67EC1F2860ED0008A8E9 /* UserConfiguration.swift */; };
+		63BE67EF1F286F180008A8E9 /* InseamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BE67EE1F286F180008A8E9 /* InseamViewController.swift */; };
 		63D5B30B1F27E2EB005E037C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D5B30A1F27E2EB005E037C /* AppDelegate.swift */; };
 		63D5B30D1F27E2EB005E037C /* BikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63D5B30C1F27E2EB005E037C /* BikeViewController.swift */; };
 		63D5B3101F27E2EB005E037C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D5B30E1F27E2EB005E037C /* Main.storyboard */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63BE67EC1F2860ED0008A8E9 /* UserConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserConfiguration.swift; sourceTree = "<group>"; };
+		63BE67EE1F286F180008A8E9 /* InseamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InseamViewController.swift; path = ../InseamViewController.swift; sourceTree = "<group>"; };
 		63D5B3071F27E2EB005E037C /* BikeSizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeSizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63D5B30A1F27E2EB005E037C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63D5B30C1F27E2EB005E037C /* BikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63BE67EB1F2860BF0008A8E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				63BE67EC1F2860ED0008A8E9 /* UserConfiguration.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		63D5B2FE1F27E2EA005E037C = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +68,11 @@
 		63D5B3091F27E2EB005E037C /* BikeSizer */ = {
 			isa = PBXGroup;
 			children = (
+				63BE67EB1F2860BF0008A8E9 /* Models */,
 				63D5B30A1F27E2EB005E037C /* AppDelegate.swift */,
 				63D5B30C1F27E2EB005E037C /* BikeViewController.swift */,
 				63D5B31C1F280EBA005E037C /* HeightViewController.swift */,
+				63BE67EE1F286F180008A8E9 /* InseamViewController.swift */,
 				63D5B30E1F27E2EB005E037C /* Main.storyboard */,
 				63D5B3111F27E2EB005E037C /* Assets.xcassets */,
 				63D5B3131F27E2EB005E037C /* LaunchScreen.storyboard */,
@@ -140,8 +154,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				63D5B30D1F27E2EB005E037C /* BikeViewController.swift in Sources */,
+				63BE67ED1F2860ED0008A8E9 /* UserConfiguration.swift in Sources */,
 				63D5B30B1F27E2EB005E037C /* AppDelegate.swift in Sources */,
 				63D5B31D1F280EBA005E037C /* HeightViewController.swift in Sources */,
+				63BE67EF1F286F180008A8E9 /* InseamViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +319,7 @@
 				63D5B31B1F27E2EB005E037C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

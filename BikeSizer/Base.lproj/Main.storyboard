@@ -135,7 +135,6 @@
         <!--Height View Controller-->
         <scene sceneID="Ysh-hJ-tHx">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ef1-gU-ffV" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="kIy-4D-MXl" customClass="HeightViewController" customModule="BikeSizer" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="vkx-gz-RvT"/>
@@ -273,6 +272,7 @@
                         <outlet property="heightPickerTextField" destination="7az-D9-xJu" id="AlD-CW-Sxt"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ef1-gU-ffV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1752.1739130434785" y="35.869565217391305"/>
         </scene>
@@ -387,6 +387,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gez-3E-CKc">
+                                <rect key="frame" x="60" y="351" width="294" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="FINISH!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="5fI-lv-XCV" kind="show" id="9ze-ND-KOb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -418,6 +430,71 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EUp-qN-S7H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2560.8695652173915" y="35.869565217391305"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="nFQ-eC-Hea">
+            <objects>
+                <viewController id="5fI-lv-XCV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kHF-sh-Zsk"/>
+                        <viewControllerLayoutGuide type="bottom" id="qhE-bC-nNX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="IPR-c4-3ug">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="size time!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m71-N5-6HW">
+                                <rect key="frame" x="20" y="142" width="374" height="41"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="34"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="se3-a4-euF">
+                                <rect key="frame" x="60" y="279" width="294" height="196"/>
+                                <fontDescription key="fontDescription" name="KohinoorBangla-Semibold" family="Kohinoor Bangla" pointSize="140"/>
+                                <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your bike should be sized at:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvw-e3-cEF">
+                                <rect key="frame" x="98" y="259" width="219" height="20"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="inches" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egS-VI-7Cc">
+                                <rect key="frame" x="171" y="442" width="73" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="362-xx-2N6">
+                                <rect key="frame" x="60" y="550" width="294" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="FIND A BIKE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="se3-a4-euF" firstAttribute="top" secondItem="fvw-e3-cEF" secondAttribute="bottom" id="46n-Yp-GFg"/>
+                            <constraint firstItem="se3-a4-euF" firstAttribute="leading" secondItem="IPR-c4-3ug" secondAttribute="leadingMargin" constant="40" id="7gA-SL-l8f"/>
+                            <constraint firstItem="m71-N5-6HW" firstAttribute="leading" secondItem="IPR-c4-3ug" secondAttribute="leadingMargin" id="F5o-UD-ID2"/>
+                            <constraint firstItem="fvw-e3-cEF" firstAttribute="centerX" secondItem="IPR-c4-3ug" secondAttribute="centerX" id="XnY-2E-b6q"/>
+                            <constraint firstItem="egS-VI-7Cc" firstAttribute="top" secondItem="se3-a4-euF" secondAttribute="bottom" constant="-33" id="dqI-hJ-ngA"/>
+                            <constraint firstItem="egS-VI-7Cc" firstAttribute="centerX" secondItem="IPR-c4-3ug" secondAttribute="centerX" id="fal-rK-P8q"/>
+                            <constraint firstItem="fvw-e3-cEF" firstAttribute="top" secondItem="m71-N5-6HW" secondAttribute="bottom" constant="76" id="gT2-pT-k65"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="se3-a4-euF" secondAttribute="trailing" constant="40" id="oYa-4c-R7z"/>
+                            <constraint firstItem="m71-N5-6HW" firstAttribute="trailing" secondItem="IPR-c4-3ug" secondAttribute="trailingMargin" id="uk4-Uu-QI5"/>
+                            <constraint firstItem="m71-N5-6HW" firstAttribute="top" secondItem="kHF-sh-Zsk" secondAttribute="bottom" constant="78" id="wXU-Oc-p88"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yZo-8N-phE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3305.7971014492755" y="35.869565217391305"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2Uv-tF-U0k">

@@ -19,7 +19,9 @@ class InseamViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     
     var inseamPickerView = UIPickerView()
     
-    let inseam = ["11''","12''","13''","14''","15''","16''","17''","18''","19''","20''","21''","22''","23''","24''","25''","26''","27''","28''","29''","30''","31''","32''","33''","34''"]
+    let inseam = ["24''","25''","26''","27''","28''","29''","30''","31''","32''","33''","34''","35''","36''","37''"]
+    
+    let kidsInseam = ["11''","12''","13''","14''","15''","16''","17''","18''","19''","20''","21''","22''","23''","24''","25''","26''","27''","28''","29''","30''"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -103,16 +105,32 @@ class InseamViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     }
     
     func pickerView(_ inseamPickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return inseam.count
+        if UserConfiguration.sharedInstance.bikeType == .kids {
+            return kidsInseam.count }
+        else {
+            return inseam.count
+        }
     }
     
     func pickerView(_ inseamPickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return inseam[row]
+        if UserConfiguration.sharedInstance.bikeType == .kids {
+        return kidsInseam[row]
+        }
+        else {
+            return inseam[row]
+        }
     }
     
     func pickerView(_ inseamPickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        inseamTextField.text = inseam[row]
-        UserConfiguration.sharedInstance.userInseam = inseam[row]
+        if UserConfiguration.sharedInstance.bikeType == .kids {
+            inseamTextField.text = kidsInseam[row]
+            UserConfiguration.sharedInstance.userInseam = kidsInseam[row]
+        }
+        else {
+            inseamTextField.text = inseam[row]
+            UserConfiguration.sharedInstance.userInseam = inseam[row]
+        }
+        
         print(UserConfiguration.sharedInstance.userInseam)
         inseamLabel.text = UserConfiguration.sharedInstance.userInseam
         finishButton.isEnabled = true

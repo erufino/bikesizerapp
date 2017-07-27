@@ -36,14 +36,14 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qqk-w9-kCp" userLabel="Mountain Bike Button">
                                                 <rect key="frame" x="0.0" y="0.0" width="171.5" height="103.5"/>
-                                                <state key="normal" image="Group"/>
+                                                <state key="normal" image="mountain2"/>
                                                 <connections>
                                                     <action selector="mountainBikeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vu4-pG-w86"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKE-lf-xNO" userLabel="Road Bike Button">
                                                 <rect key="frame" x="171.5" y="0.0" width="171.5" height="103.5"/>
-                                                <state key="normal" image="Group 2"/>
+                                                <state key="normal" image="road2"/>
                                                 <connections>
                                                     <action selector="roadBikeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MAh-bM-KPw"/>
                                                 </connections>
@@ -56,14 +56,14 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0It-mB-1o5">
                                                 <rect key="frame" x="0.0" y="0.0" width="171.5" height="103"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
-                                                <state key="normal" title="Mountain">
+                                                <state key="normal" title="mountain">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pHH-Wn-FqZ">
                                                 <rect key="frame" x="171.5" y="0.0" width="171.5" height="103"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
-                                                <state key="normal" title="Road">
+                                                <state key="normal" title="road">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
@@ -74,14 +74,14 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSb-Cn-vSq">
                                                 <rect key="frame" x="0.0" y="0.0" width="171.5" height="103.5"/>
-                                                <state key="normal" image="Commuter"/>
+                                                <state key="normal" image="commuter2"/>
                                                 <connections>
                                                     <action selector="commuterBikeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O0P-s4-8rY"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XtG-za-GxX">
                                                 <rect key="frame" x="171.5" y="0.0" width="171.5" height="103.5"/>
-                                                <state key="normal" image="Kids"/>
+                                                <state key="normal" image="kids2"/>
                                                 <connections>
                                                     <action selector="kidsBikeButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w1O-m1-S69"/>
                                                 </connections>
@@ -93,15 +93,15 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfM-i6-rRH">
                                                 <rect key="frame" x="0.0" y="0.0" width="171.5" height="103"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
-                                                <state key="normal" title="Commuter">
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                                                <state key="normal" title="commuter">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ir3-dh-V3C">
                                                 <rect key="frame" x="171.5" y="0.0" width="171.5" height="103"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="19"/>
-                                                <state key="normal" title="Kids">
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="19"/>
+                                                <state key="normal" title="kids">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
@@ -568,12 +568,12 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Commuter" width="105" height="105"/>
-        <image name="Group" width="105" height="105"/>
-        <image name="Group 2" width="105" height="105"/>
-        <image name="Kids" width="105" height="105"/>
+        <image name="commuter2" width="105" height="105"/>
         <image name="heightIcon" width="80" height="93"/>
         <image name="inseamIcon" width="71" height="93"/>
+        <image name="kids2" width="105" height="105"/>
+        <image name="mountain2" width="105" height="105"/>
+        <image name="road2" width="105" height="105"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="wpi-aR-w0q"/>

@@ -18,7 +18,9 @@ class HeightViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     
     var pickerView = UIPickerView()
     
-    let height = ["4'1''","4'2''","4'3''","4'4''","4'5''","4'6''","4'7''","4'8''","4'9''","4'10''","4'11''","5'1''","5'2''","5'3''","5'4''","5'5''","5'6''","5'7''","5'8''","5'9''","5'10''","5'11''","6'1''","6'2''","6'3''","6'4''","6'5''","6'6''","6'7''","6'8''","6'9''","6'10''","6'11''"]
+    let height = ["4'8''","4'9''","4'10''","4'11''","5'0''","5'1''","5'2''","5'3''","5'4''","5'5''","5'6''","5'7''","5'8''","5'9''","5'10''","5'11''","6'0''","6'1''","6'2''","6'3''","6'4''","6'5''","6'6''"]
+    
+    let kidsHeight = ["2'10''","2'11''","3'0''","3'1''","3'2''","3'3''","3'4''","3'5''","3'6''","3'7''","3'8''","3'9''","3'10''","3'11''","4'0''","4'1''","4'2''","4'3''","4'4''","4'5''","4'6''","4'7''","4'8''","4'9''","4'10''","4'11''","5'0''","5'1''","5'2''","5'3''","5'4''","5'5''"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -98,19 +100,44 @@ class HeightViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return height.count
+        if UserConfiguration.sharedInstance.bikeType == .road || UserConfiguration.sharedInstance.bikeType == .mountain || UserConfiguration.sharedInstance.bikeType == .commuter {
+            return height.count  }
+        else {
+            return kidsHeight.count
+        }
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return height[row]
+        if UserConfiguration.sharedInstance.bikeType == .road || UserConfiguration.sharedInstance.bikeType == .mountain || UserConfiguration.sharedInstance.bikeType == .commuter {
+            return height[row]  }
+        else {
+            return kidsHeight[row]
+        }
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        heightPickerTextField.text = height[row]
-        UserConfiguration.sharedInstance.userHeight = height[row]
+        if UserConfiguration.sharedInstance.bikeType == .road || UserConfiguration.sharedInstance.bikeType == .mountain || UserConfiguration.sharedInstance.bikeType == .commuter {
+            heightPickerTextField.text = height[row]
+            UserConfiguration.sharedInstance.userHeight = height[row]
+  }
+        else {
+            heightPickerTextField.text = kidsHeight[row]
+            UserConfiguration.sharedInstance.userHeight = kidsHeight[row]
+        }
+        
         print(UserConfiguration.sharedInstance.userHeight)
         heightNextButton.isEnabled = true
         heightLabel.text = UserConfiguration.sharedInstance.userHeight
     }
+    
+    @IBAction func nymbLink(_ sender: Any) {
+        let url = URL(string: "https://www.nymb.co")!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+    }
+    
     
 }

@@ -43,5 +43,16 @@ class BikeViewController: UIViewController {
         self.performSegue(withIdentifier: "HeightSegueIdentifier", sender: self)
     }
     
+    @IBAction func nymbLink(_ sender: Any) {
+        let url = URL(string: "https://www.nymb.co")!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+
+    }
+    
+    
 }
 

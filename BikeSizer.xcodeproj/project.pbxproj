@@ -116,6 +116,7 @@
 				TargetAttributes = {
 					63D5B3061F27E2EB005E037C = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 74H85LYB88;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -284,6 +285,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 74H85LYB88;
 				INFOPLIST_FILE = BikeSizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ezrarufino.BikeSizer;
@@ -296,6 +298,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 74H85LYB88;
 				INFOPLIST_FILE = BikeSizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ezrarufino.BikeSizer;

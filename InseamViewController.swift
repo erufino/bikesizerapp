@@ -14,6 +14,7 @@ class InseamViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     @IBOutlet weak var bikeTypeLabel: UILabel!
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var inseamLabel: UILabel!
+    @IBOutlet weak var skipButton: UIButton!
     
     
     var inseamPickerView = UIPickerView()
@@ -22,6 +23,7 @@ class InseamViewController: UIViewController, UIPickerViewDelegate, UIPickerView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         bikeTypeLabel.text = UserConfiguration.sharedInstance.bikeType.rawValue
         heightLabel.text = UserConfiguration.sharedInstance.userHeight
         inseamLabel.text = UserConfiguration.sharedInstance.userInseam
@@ -113,7 +115,20 @@ class InseamViewController: UIViewController, UIPickerViewDelegate, UIPickerView
         UserConfiguration.sharedInstance.userInseam = inseam[row]
         print(UserConfiguration.sharedInstance.userInseam)
         inseamLabel.text = UserConfiguration.sharedInstance.userInseam
+        finishButton.isEnabled = true
+        
     }
+    
+    @IBAction func nymbLink(_ sender: Any) {
+        let url = URL(string: "https://www.nymb.co")!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+    }
+    
+    
 
     
 }

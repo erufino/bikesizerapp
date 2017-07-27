@@ -154,7 +154,7 @@ class SizeViewController: UIViewController {
             
         else if UserConfiguration.sharedInstance.bikeType == .kids {
             sizeLabel.text = kidsDict[UserConfiguration.sharedInstance.userHeight]
-            bikeTypeLabel.text = "kids bike"
+            bikeTypeLabel.text = "Your kids bike"
             centLabel.text = "inch wheel size"
         }
         
@@ -167,6 +167,45 @@ class SizeViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    @IBAction func findABikeButton(_ sender: Any) {
+        var url = URL(string: "http://www.amazon.com")!
+        
+        if UserConfiguration.sharedInstance.bikeType == .road {
+            url = URL(string: "http://amzn.to/2uzDDIs")!
+        }
+        
+        else if UserConfiguration.sharedInstance.bikeType == .mountain {
+            url = URL(string: "http://amzn.to/2eP6PFS")!
+        }
+        
+        else if UserConfiguration.sharedInstance.bikeType == .commuter {
+            url = URL(string: "http://amzn.to/2ePrOIw")!
+        }
+        
+        else if UserConfiguration.sharedInstance.bikeType == .kids {
+            url = URL(string: "http://amzn.to/2ePrwkU")!
+        }
+        
+        
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+        
+    }
+    
+    
+    @IBAction func nymbLink(_ sender: Any) {
+        let url = URL(string: "https://www.nymb.co")!
+        if #available(iOS 10.0, *) {
+            UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        } else {
+            UIApplication.shared.openURL(url)
+        }
+    }
+        
 
     /*
     // MARK: - Navigation
